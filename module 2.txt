@@ -1,0 +1,712 @@
+MODULE: 2
+SE – HTML and CSS
+1. Define the terms: Website, Webpage, Web browser, Web server,
+HTML,CSS
+
+A website is a collection of web pages that are linked together. When you type in a web address (also known as a URL), your
+browser will connect to the server where the website resides and download all of the web pages for that site. The webpage
+that you see when you visit a website is usually the home page, which is the first page that is loaded when you visit the 
+site.
+The home page of a website usually contains a description of the site, as well as links to all of the other pages on the site.
+In addition, many websites have a logo or banner that displays the name of the site.
+
+A web page is a single document that resides on a website. When you click on a link to a webpage, your browser will connect 
+to the server where the webpage resides and download the page. Once the page has been downloaded, you can view it offline 
+without an internet connection.
+Webpages are usually written in HTML (Hypertext Markup Language), which is a language used to create web pages. HTML is a very
+simple language, and you don’t need to know how to code to create your web pages.
+
+A web browser is an application for accessing websites. When a user requests a web page from a particular website, the browser
+retrieves its files from a web server and then displays the page on the user's screen. Browsers are used on a range of devices,
+including desktops, laptops, tablets, and smartphones.
+
+A web server is software and hardware that uses HTTP (Hypertext Transfer Protocol) and other protocols to respond to client
+requests made over the World Wide Web.
+
+HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML describes the 
+structure of a Web page. HTML consists of a series of elements.
+
+CSS is the acronym of “Cascading Style Sheets”. CSS is a computer language for laying out and structuring web pages (HTML or XML).
+This language contains coding elements and is composed of these “cascading style sheets” which are equally called CSS files
+
+2. Create a webpage to show “This is my first HTML page”
+
+<!DOCTYPE html>
+
+<html lang=”en”>
+
+<head>
+
+<meta name=”viewport” content=”width=device-width”>
+
+     <title>A simple HTML document</title>
+
+</head>
+
+<body>
+
+     <h1>Hello World!<h1>
+
+<p>This is my first HTML page.</p>
+
+</body>
+
+</html>
+
+3. Display top 10 IT companies list in html webpage
+
+4. Create a dropdown list
+
+// Syntax
+<select name="" id="">
+  <option value="">...</option>
+  // ...
+</select>
+
+// Syntax
+<label for="languages">List of Languages:</label>
+<select name="" id="languages">
+  <option value="">...</option>
+  // ...
+</select>
+
+<select name="" id="languages" required>
+  // ...
+</select>
+
+// Or
+
+<select name="" id="languages" disabled>
+  // ...
+</select>
+
+<select name="language" id="language">
+  <option value="javascript">JavaScript</option>
+  <option value="python">Python</option>
+  <option value="c++">C++</option>
+  <option value="java">Java</option>
+</select>
+
+<select name="language" id="language">
+  <option value="javascript" disabled>JavaScript</option>
+  <option value="python">Python</option>
+  <option value="c++">C++</option>
+  <option value="java" selected>Java</option>
+</select>
+
+div class="dropdown">
+  <button>Profile</button>
+  <div class="dropdown-options">
+    <a href="#">Dashboard</a>
+    <a href="#">Setting</a>
+    <a href="#">Logout</a>
+  </div>
+</div>
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-options {
+  display: none;
+  position: absolute;
+  overflow: auto;
+}
+
+.dropdown:hover .dropdown-options {
+  display: block;
+}
+
+5. Create a Table Of college Management system using row span & col span.
+
+<table>
+  <tr>
+    <th colspan="2">Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>43</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>57</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <td>Jill</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Phone</th>
+    <td>555-1234</td>
+  </tr>
+  <tr>
+    <td>555-8745</td>
+</tr>
+</table>
+
+6. Create below table using HTML table tags
+
+<table>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+</table>
+
+7. Create Registration form using HTML, CSS
+
+<form action="action_page.php">
+  <div class="container">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+
+  <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
+</form>
+
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+8. In how many ways can a CSS be integrated as a web page?
+
+CSS may be added to HTML in three different ways. To style a single HTML element on the page, use Inline CSS in a style 
+attribute. By adding CSS to the head section of our HTML document, we can embed an internal stylesheet. We can also connect
+to an external stylesheet that separates our CSS from our HTML.
+
+9. Create simple three pages using External CSS, Internal CSS, and Inline
+CSS.
+
+Inline CSS
+Style rules can be applied to individual HTML elements using inline CSS. Inlining CSS is the process of embedding CSS into
+an HTML file rather than using an external CSS file. Because inline CSS only allows us to apply a single style to one HTML
+element, it's only useful for establishing unique properties. Inline CSS is advantageous since it decreases the number of 
+files that the browser must download before the web page can be shown. The browser loads an HTML file first, then downloads
+the CSS file when using external CSS. We only need to download one HTML file instead of two using inline CSS, which speeds
+up the process.
+
+The inline styles will only affect the HTML element to which the style attribute with CSS-property values is applied. 
+The first paragraph in the example below will be styled in red with a 20px font size. The properties apply just to the first
+line of the code, not the full code.
+
+Internal CSS
+Internal CSS is one of the most popular CSS forms for updating, customizing, and modifying a single web page's unique 
+styles. You can use the internal CSS by integrating the <style> element in the <head> section of a HTML web page. 
+
+Internal CSS can be used to style a single web page, but not multiple web pages, and we can style numerous web pages with
+the same code.
+
+External CSS
+External CSS is one of the most often used CSS forms for updating, styling, and adjusting the different styles in a large
+number of HTML web pages at the same time. There are two ways to include an external style sheet in an HTML document. 
+One method is to use the <link> tag in the HTML document head. Another option is to use a combination of external CSS 
+functions and integrated CSS. 
+
+One of the distinguishing characteristics of external CSS is that it can be written in any text editor, but it must always be saved with the.css extension and must not contain any HTML elements.
+
+We use the external style sheet when we need to make changes to multiple pages. It's ideal for this circumstance because it
+allows us to change the appearance of the entire website with just one file change. It comes in handy while working on large
+projects or several HTML web pages.
+
+We must define the filename of the CSS sheet with the "mystyle.css" extension within the <link> element within the <head> 
+section of the HTML page to use external CSS: 
+
+10. Create below page using HTML CSS
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple web page Template</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar background">
+        <div class="logo">
+            <img src=
+"https://media.geeksforgeeks.org/gfg-gg-logo.svg" 
+                 style="height: 30px;" 
+                 alt="Logo">
+        </div>
+        <ul class="nav-list">
+            <li><a href="#web">Web Technology</a></li>
+            <li><a href="#program">C Programming</a></li>
+            <li><a href="#course">Courses</a></li>
+        </ul>
+        <div class="rightnav">
+            <input type="text" 
+                   name="search" 
+                   id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+
+    <section class="firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" 
+                    id="web">Web Technology
+                  </h1>
+                <p class="text-small">
+                    HTML stands for HyperText Markup Language.
+                    It is used to design web pages using a markup
+                    language. HTML is the combination of Hypertext
+                    and Markup language. Hypertext defines the
+                    link between the web pages. A markup language
+                    is used to define the text document within tag
+                    which defines the structure of web pages.
+                    HTML is a markup language that is used by the
+                    browser to manipulate text, images, and other
+                    content to display it in the required format.
+                </p>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="secondsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" 
+                    id="program">
+                    C Programming
+                </h1>
+                <p class="text-small">
+                    C is a procedural programming language. It
+                    was initially developed by Dennis Ritchie
+                    as a system programming language to write
+                    operating system. The main features of C
+                    language include low-level access to memory,
+                    simple set of keywords, and clean style,
+                    these features make C language suitable for
+                    system programming like operating system or
+                    compiler development.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="paras">
+            <h1 class="sectionTag text-big">Java</h1>
+            <p class="sectionSubTag text-small">
+                Java has been one of the most popular
+                programming language for many years.
+                Java is Object Oriented. However it is
+                not considered as pure object oriented
+                as it provides support for primitive
+                data types (like int, char, etc) The
+                Java codes are first compiled into byte
+                code (machine independent code). Then
+                the byte code is run on Java Virtual
+                Machine (JVM) regardless of the
+                underlying architecture.
+            </p>
+        </div>
+    </section>
+
+    <footer class="background">
+        <p class="text-footer">
+            Copyright ©-All rights are reserved
+        </p>
+    </footer>
+</body>
+
+</html>
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.background {
+    background: black;
+    background-blend-mode: darken;
+    background-size: cover;
+}
+
+.nav-list {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 180px;
+    border-radius: 50px;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 26px 30px;
+    padding: 10px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list li a:hover {
+    color: grey;
+}
+
+.rightnav {
+    width: 30%;
+    text-align: right;
+}
+
+#search {
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+
+.firstsection {
+    background-color: green;
+    height: 400px;
+}
+
+.secondsection {
+    background-color: blue;
+    height: 400px;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    max-width: 80%;
+    margin: auto;
+    height: 80%;
+}
+
+.firsthalf {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondhalf {
+    width: 30%;
+}
+
+.secondhalf img {
+    width: 70%;
+    border: 4px solid white;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+}
+
+.text-big {
+    font-family: 'Piazzolla', serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.text-small {
+    font-size: 18px;
+}
+
+.btn {
+    padding: 8px 20px;
+    margin: 7px 0;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-sm {
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+
+.section {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    margin: auto;
+}
+
+.section-Left {
+    flex-direction: row-reverse;
+}
+
+.paras {
+    padding: 0px 65px;
+}
+
+.thumbnail img {
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 26px;
+    margin-top: 19px;
+}
+
+.center {
+    text-align: center;
+}
+
+.text-footer {
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+}
+
+
+.rightnav {
+    width: 100%;
+    text-align: right;
+    margin-top: 10px;
+}
+
+#search {
+    box-sizing: border-box;
+    width: 70%;
+    padding: 8px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+
+.btn-sm {
+    padding: 8px 20px;
+    margin: 7px 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+11. Create link-pseudo classes using external css, to format links on the pages
+
+<p>Pages that you might have visited:</p>
+<ul>
+  <li>
+    <a href="https://developer.mozilla.org">MDN Web Docs</a>
+  </li>
+  <li>
+    <a href="https://www.youtube.com/">YouTube</a>
+  </li>
+</ul>
+<p>Pages unlikely to be in your history:</p>
+<ul>
+  <li>
+    <a href="https://developer.mozilla.org/missing-2">Random MDN page</a>
+  </li>
+  <li>
+    <a href="https://example.com/missing-2">Random Example page</a>
+  </li>
+</ul>
+
+p {
+  font-weight: bold;
+}
+
+a:link {
+  color: forestgreen;
+  text-decoration-color: hotpink;
+}
+
+12. Create a dynamic pseudo class using HTML, CSS
+
+!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS dynamic pseudo-classes</title>
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+            
+            h1, h2 {
+                font-family: cursive;
+            }
+            
+            a:link {
+                color: red;
+            }
+            a:visited {
+                color: orange;
+            }
+            a:hover { 
+                background-color: rgb(255, 214, 255);
+            }  
+            a:active {
+                background-color: rgb(255, 214, 255);
+            } 
+            a:focus {
+                background-color: rgb(255, 214, 255);
+            } 
+        </style>
+    </head>
+    <body>
+    
+        <h1>Famous paintings</h1>
+        
+        <p>You can learn more about these famous paintings on <a href="https://www.khanacademy.org">Khan Academy</a>.</p>
+        
+        
+        <h2>Baroque</h2>
+        <ul>
+            <li>
+                <a href="https://www.khanacademy.org/humanities/monarchy-enlightenment/baroque-art1/spain/v/vel-zquez-las-meninas-c-1656">
+                    Velázquez, Las Meninas
+                </a>
+            </li>
+            <li>
+                <a href="https://www.khanacademy.org/humanities/monarchy-enlightenment/baroque-art1/baroque-italy/v/caravaggio-s-calling-of-st-matthew-c-1599-1600">Caravaggio, Calling of St. Matthew</a>
+            </li>
+            <li>
+                <a href="https://www.khanacademy.org/humanities/monarchy-enlightenment/baroque-art1/holland/a/rembrandt-night-watch">Rembrandt, Night watch</a>
+            </li>
+        </ul>
+        
+        <h2>Mannerism</h2>
+        <ul>
+            <li>
+                <a href="https://www.khanacademy.org/humanities/renaissance-reformation/mannerism1/v/parmigianino-madonna-of-the-long-neck-1530-33">
+                    Parmigianino, Madonna of the Long Neck
+                </a>
+            </li>
+            <li>
+                <a href="https://www.khanacademy.org/humanities/renaissance-reformation/mannerism1/a/el-greco-view-of-toledo">
+                    El Greco, View of Toledo
+                </a>
+            </li>
+        </ul>
+        
+        <h2>Abstract</h2>
+        <ul>
+            <li>
+                <a href="https://www.khanacademy.org/humanities/art-1010/early-abstraction/cubism/a/picasso-guernica">
+                    Picasso, Guernica
+                </a>
+            </li>
+            <li>
+                <a href="https://www.khanacademyd.org/humanities/art-1010/early-abstraction/cubism/a/braque-the-portuguese">
+                    Braque, The Portuguese
+                </a>
+            </li>
+        </ul>
+        
+        
+
+    </body>
+</html>
